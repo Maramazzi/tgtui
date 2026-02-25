@@ -1,0 +1,16 @@
+/* Монохромная тема — для терминалов без цвета */
+$background: #000000;
+$surface: #000000;
+$primary: #ffffff;
+$primary-darken-2: #888888;
+$primary-darken-3: #333333;
+$text: #ffffff;
+$text-muted: #888888;
+$success: #ffffff;
+$error: #ffffff;
+
+Screen { background: $background; color: $text; }
+Input, TextArea { background: $background; border: solid $primary; color: $text; }
+ListView { background: $background; border: none; }
+ListItem { background: $background; padding: 0 1; }
+ListItem.--highlight { background: $primary-darken-3; }

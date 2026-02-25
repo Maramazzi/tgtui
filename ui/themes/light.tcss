@@ -1,0 +1,18 @@
+/* Светлая тема */
+$background: #f8fafc;
+$surface: #ffffff;
+$primary: #2563eb;
+$primary-darken-2: #93c5fd;
+$primary-darken-3: #dbeafe;
+$text: #1e293b;
+$text-muted: #94a3b8;
+$success: #16a34a;
+$error: #dc2626;
+
+Screen { background: $background; color: $text; }
+Input, TextArea { background: $surface; border: solid $primary-darken-2; color: $text; }
+Input:focus, TextArea:focus { border: solid $primary; }
+ListView { background: $background; border: none; }
+ListItem { background: $background; padding: 0 1; }
+ListItem:hover { background: $primary-darken-3; }
+ListItem.--highlight { background: $primary-darken-2; }

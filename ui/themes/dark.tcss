@@ -1,0 +1,50 @@
+/* Тёмная тема по умолчанию */
+$background: #1a1a2e;
+$surface: #16213e;
+$primary: #4a9eff;
+$primary-darken-2: #2d5986;
+$primary-darken-3: #1d3a5c;
+$secondary: #7c3aed;
+$text: #e2e8f0;
+$text-muted: #64748b;
+$success: #22c55e;
+$error: #ef4444;
+$warning: #f59e0b;
+
+Screen {
+    background: $background;
+    color: $text;
+}
+
+Input, TextArea {
+    background: $surface;
+    border: solid $primary-darken-2;
+    color: $text;
+}
+
+Input:focus, TextArea:focus {
+    border: solid $primary;
+}
+
+Button.-primary {
+    background: $primary;
+    color: $background;
+}
+
+ListView {
+    background: $background;
+    border: none;
+}
+
+ListItem {
+    background: $background;
+    padding: 0 1;
+}
+
+ListItem:hover {
+    background: $primary-darken-3;
+}
+
+ListItem.--highlight {
+    background: $primary-darken-2;
+}
